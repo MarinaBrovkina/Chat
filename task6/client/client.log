@@ -1,0 +1,9 @@
+16:07:58 [AWT-EventQueue-0] INFO  r.shift.controller.ClientController - Connection requested to localhost:1234
+16:07:58 [AWT-EventQueue-0] INFO  ru.shift.model.Client - Connecting to localhost:1234
+16:07:58 [AWT-EventQueue-0] INFO  r.shift.controller.ClientController - Connection requested to localhost:1234
+16:07:58 [AWT-EventQueue-0] INFO  ru.shift.model.Client - Connecting to localhost:1234
+16:08:40 [AWT-EventQueue-0] INFO  r.shift.controller.ClientController - Connection requested to localhost:8000
+16:08:40 [AWT-EventQueue-0] INFO  ru.shift.model.Client - Connecting to localhost:8000
+16:08:41 [AWT-EventQueue-0] INFO  r.shift.controller.ClientController - Connection requested to localhost:8000
+16:08:41 [AWT-EventQueue-0] INFO  ru.shift.model.Client - Connecting to localhost:8000
+16:08:44 [AWT-EventQueue-0] INFO  r.shift.controller.ClientController - Name submitted: dfh

@@ -1,0 +1,76 @@
+16:07:26 [main] INFO  ru.shift.server.Server - Server started on port 8000
+16:08:26 [main] INFO  ru.shift.server.Server - Server started on port 8000
+16:08:40 [main] INFO  ru.shift.server.Server - New client connected: /127.0.0.1:52226
+16:08:41 [main] INFO  ru.shift.server.Server - New client connected: /127.0.0.1:52227
+16:08:50 [Thread-1] ERROR ru.shift.io.MessageReader - Connection error
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1099)
+	at com.fasterxml.jackson.core.json.ByteSourceJsonBootstrapper.ensureLoaded(ByteSourceJsonBootstrapper.java:547)
+	at com.fasterxml.jackson.core.json.ByteSourceJsonBootstrapper.detectEncoding(ByteSourceJsonBootstrapper.java:137)
+	at com.fasterxml.jackson.core.json.ByteSourceJsonBootstrapper.constructParser(ByteSourceJsonBootstrapper.java:266)
+	at com.fasterxml.jackson.core.JsonFactory._createParser(JsonFactory.java:1874)
+	at com.fasterxml.jackson.core.JsonFactory.createParser(JsonFactory.java:1273)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3924)
+	at ru.shift.io.MessageReader.readMessage(MessageReader.java:36)
+	at ru.shift.MessageConnection.read(MessageConnection.java:37)
+	at ru.shift.connection.Connection.run(Connection.java:35)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+16:08:50 [Thread-3] ERROR ru.shift.io.MessageReader - Connection error
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1099)
+	at com.fasterxml.jackson.core.json.ByteSourceJsonBootstrapper.ensureLoaded(ByteSourceJsonBootstrapper.java:547)
+	at com.fasterxml.jackson.core.json.ByteSourceJsonBootstrapper.detectEncoding(ByteSourceJsonBootstrapper.java:137)
+	at com.fasterxml.jackson.core.json.ByteSourceJsonBootstrapper.constructParser(ByteSourceJsonBootstrapper.java:266)
+	at com.fasterxml.jackson.core.JsonFactory._createParser(JsonFactory.java:1874)
+	at com.fasterxml.jackson.core.JsonFactory.createParser(JsonFactory.java:1273)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3924)
+	at ru.shift.io.MessageReader.readMessage(MessageReader.java:36)
+	at ru.shift.MessageConnection.read(MessageConnection.java:37)
+	at ru.shift.connection.Connection.run(Connection.java:35)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+16:08:50 [Thread-1] ERROR ru.shift.connection.Connection - Message processing error: Ошибка подключения: Connection reset
+ru.shift.exeptions.MessageException: Ошибка подключения: Connection reset
+	at ru.shift.io.MessageReader.readMessage(MessageReader.java:43)
+	at ru.shift.MessageConnection.read(MessageConnection.java:37)
+	at ru.shift.connection.Connection.run(Connection.java:35)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1099)
+	at com.fasterxml.jackson.core.json.ByteSourceJsonBootstrapper.ensureLoaded(ByteSourceJsonBootstrapper.java:547)
+	at com.fasterxml.jackson.core.json.ByteSourceJsonBootstrapper.detectEncoding(ByteSourceJsonBootstrapper.java:137)
+	at com.fasterxml.jackson.core.json.ByteSourceJsonBootstrapper.constructParser(ByteSourceJsonBootstrapper.java:266)
+	at com.fasterxml.jackson.core.JsonFactory._createParser(JsonFactory.java:1874)
+	at com.fasterxml.jackson.core.JsonFactory.createParser(JsonFactory.java:1273)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3924)
+	at ru.shift.io.MessageReader.readMessage(MessageReader.java:36)
+	... 3 common frames omitted
+16:08:50 [Thread-3] ERROR ru.shift.connection.Connection - Message processing error: Ошибка подключения: Connection reset
+ru.shift.exeptions.MessageException: Ошибка подключения: Connection reset
+	at ru.shift.io.MessageReader.readMessage(MessageReader.java:43)
+	at ru.shift.MessageConnection.read(MessageConnection.java:37)
+	at ru.shift.connection.Connection.run(Connection.java:35)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1099)
+	at com.fasterxml.jackson.core.json.ByteSourceJsonBootstrapper.ensureLoaded(ByteSourceJsonBootstrapper.java:547)
+	at com.fasterxml.jackson.core.json.ByteSourceJsonBootstrapper.detectEncoding(ByteSourceJsonBootstrapper.java:137)
+	at com.fasterxml.jackson.core.json.ByteSourceJsonBootstrapper.constructParser(ByteSourceJsonBootstrapper.java:266)
+	at com.fasterxml.jackson.core.JsonFactory._createParser(JsonFactory.java:1874)
+	at com.fasterxml.jackson.core.JsonFactory.createParser(JsonFactory.java:1273)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3924)
+	at ru.shift.io.MessageReader.readMessage(MessageReader.java:36)
+	... 3 common frames omitted
+16:08:50 [Thread-0] INFO  ru.shift.io.MessageWriter - Received shutdown signal
+16:08:50 [Thread-2] INFO  ru.shift.io.MessageWriter - Received shutdown signal

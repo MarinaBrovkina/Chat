@@ -1,0 +1,10 @@
+rootProject.name = 'Chat'
+include 'client'
+findProject(':client')?.name = 'client'
+include 'common'
+findProject(':common')?.name = 'common'
+include 'src:main:server'
+findProject(':src:main:server')?.name = 'server'
+include 'server'
+findProject(':server')?.name = 'server'
+
